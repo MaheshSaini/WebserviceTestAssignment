@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCancelActivity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/bg_color"
+            android:text="Search State"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+        />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtSearchText"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:gravity="center|left"
+            android:hint="Enter any key word"
+            android:paddingLeft="@dimen/fab_margin"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewCity"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_height="match_parent" />
+
+
+            <TextView
+                android:id="@+id/txtShowMapFromIP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/bg_color"
+                android:text="Show Map Go to Next Activity"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>

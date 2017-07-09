@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtSearchText"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="203.92.45.115"
+            android:paddingLeft="10dp"
+            android:hint="Enter correct IP address"
+            android:layout_weight="1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+
+            android:text="Search"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
